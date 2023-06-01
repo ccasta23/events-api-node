@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 
-function defineSession( sequelize ) {
+function defineEvent( sequelize ) {
     sequelize.define('event', {
         // Model attributes are defined here
         id: {
@@ -36,4 +36,4 @@ function defineSession( sequelize ) {
     });
 }
 
-module.exports = defineSession
+module.exports = defineEvent;
