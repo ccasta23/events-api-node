@@ -25,7 +25,7 @@ router.post('/',
     async (req,res)=>{
         const body = req.body
         const event = await service.store(body)
-        res.json(event)
+        res.status(201).json(event)
     }
 );
 
